@@ -29,7 +29,7 @@ class HomeController extends Controller
         if ($type->role_id == 3) {
             return redirect('admin');
         } else if ($type->role_id == 2) {
-            return redirect('teacher');
+              return redirect()->route('teacher.lophoc.index');
         } else if ($type->role_id == 1) {
             return redirect('student');
         }
